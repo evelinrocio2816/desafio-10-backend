@@ -25,7 +25,7 @@ paths:
           description: El producto ya existe
         '500':
           description: Error interno del servidor
-  post:
+    post:
       summary: Agregar un nuevo producto
       tags:
         - Products
@@ -46,7 +46,7 @@ paths:
           description: Petición incorrecta
         '500':
           description: Error interno del servidor
-  /products/{pid}:
+  /api/products/{pid}:
     get:
       summary: Obtener un producto por ID
       tags:
@@ -111,7 +111,7 @@ paths:
           schema:
             type: string
       responses:
-        '204':
+        '200':
           description: Producto eliminado exitosamente
         '404':
           description: Producto no encontrado

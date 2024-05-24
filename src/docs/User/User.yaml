@@ -145,7 +145,6 @@ paths:
           required: true
           schema:
             type: string
-            format: uuid
           description: ID del usuario
       responses:
         '200':
