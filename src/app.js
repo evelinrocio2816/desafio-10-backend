@@ -61,7 +61,7 @@ app.use("/", TestRouter)
 const httpServer = app.listen(PORT, () => {
     logger.info(`Servidor escuchando en el Puerto: https://localhost:${PORT}`);
 });
-
+module.exports = app;
 //Websockets: 
 const SocketManager = require("./sockets/socketmanager.js");
 const { info } = require("winston");
